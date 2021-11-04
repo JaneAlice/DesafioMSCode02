@@ -1,0 +1,129 @@
+body {
+    font-family: 'Merriweather', serif;
+}
+
+.div-cadastro {
+    padding: 50px;
+    color: white;
+}
+
+.borda-div-cadastro {
+    padding: 20px;
+    background-color: #72958b;
+    border-radius: 20px;
+}
+
+.imagem-cadastro {
+    border-radius: 20px;
+    height: 350px;
+    margin-left: -10px;
+    margin-top: 55px;
+}
+
+.div-imagem-cadastro {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.titulo-principal {
+    font-family: 'Lora', serif;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.div-linha {
+    border-bottom: 1px solid #436f6a;
+    width: 150px;
+    height: 1px;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.texto-descricao {
+    font-size: 0.7em;
+    color: #e2e9e7;
+}
+
+.link {
+    color: #436f6a;
+}
+
+.link:hover {
+    color: #e2e9e7;
+    transition: .4s;
+}
+
+.inputs {
+    border: 1px solid transparent;
+    border-radius: 20px;
+    color: #b8ccc1;
+    font-size: 0.9em;
+    padding: 10px 25px;
+    width: 100%;
+}
+
+.inputs:focus {
+    border: 1px solid #436f6a;
+}
+
+.inputs::placeholder {
+    color: #436f6a;
+}
+
+.div-icones-input {
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 100%;
+    width: 41px;
+    height: 41px; color: #436f6a;
+    font-size: 1.2em;
+    padding-top: 6px;
+}
+
+.form-check-input {
+    border-radius: 100% !important;
+    margin-right: 3px;
+}
+
+.termo-privacidade {
+    font-size: 0.75em;
+}
+
+.btn-cadastrar {
+    padding: 8px 30px;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 40px;
+    background-color: white;
+    color: #436f6a;
+    font-weight: 600;
+    font-size: 0.85em;
+}
+
+.btn-cadastrar:hover {
+    background-color: #436f6a;
+    border: 1px solid #436f6a;
+    color: #b8ccc1;
+    transition: .4s;
+}
+
+.btn-cadastrar:focus {
+    border: 1px solid #b8ccc1 !important;
+}
+
+@media (max-width: 330px) {}
+
+@media (max-width: 425px) and (min-width:  331px) {}
+
+@media (max-width: 575px) and (min-width:  426px) {}
+
+@media (max-width: 767px) and (min-width: 576px) {}
+
+@media (max-width: 991px) and (min-width: 768px) {}
+
+@media (max-width: 1200px) and (min-width: 992px) {}
+
+@media (min-width: 1201px) {}
