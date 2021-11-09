@@ -2,6 +2,7 @@ body {
     font-family: 'Merriweather', serif;
 }
 
+
 .div-cadastro {
     padding: 10px 30px 10px 30px;
     color: white;
@@ -97,7 +98,7 @@ body {
 }
 
 .inputs {
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     border-radius: 20px;
     color: #39605c;
     font-size: 0.9em;
@@ -107,8 +108,8 @@ body {
     margin-bottom: 5px;
 }
 
-.input:focus {
-    border: 1px solid #436f6a;
+.inputs:focus {
+    border: 2px solid #436f6a;
 }
 
 .inputs::placeholder {
@@ -146,8 +147,8 @@ body {
 }
 
 .btn-cadastrar:hover {
-    background-color: #436f6a;
-    border: 1px solid #436f6a;
+    background-color: #26403d;
+    border: 1px solid #26403d;
     color: #b8ccc1;
     transition: .4s;
 }
@@ -213,6 +214,36 @@ body {
 
 .btn-login:focus {
     border: 1px solid #b8ccc1 !important;
+}
+
+.input-alterar-senha {
+    border: 2px solid transparent;
+    border-radius: 20px;
+    color: #39605c;
+    font-size: 0.9em;
+    padding: 10px 25px;
+    margin-bottom: 5px;
+}
+
+.input-alterar-senha:focus {
+    border: 2px solid #436f6a;
+}
+
+.input-alterar-senha::placeholder {
+    color: #436f6a;
+}
+
+.icone-alterar-senha {
+    height: 45px;
+    width: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    color: white;
+    font-size: 1.3em;
+    border: 2px solid white;
+    border-radius: 100%;
+    background-color: #b8ccc12f;
 }
 
 @media (max-width: 330px) {
@@ -301,6 +332,11 @@ body {
         padding-top: 25px;
     }
 
+    .p-retirar {
+        padding-left: unset !important;
+        padding-right: unset !important;
+    }
+
     .borda-msg-cadastro {
         margin-left: 10px;
         margin-right: 10px;
@@ -314,6 +350,15 @@ body {
         padding: 10px 30px;
         margin-top: 30px;
         font-size: 0.8em;
+    }
+
+    .icone-alterar-senha {
+        height: 40px;
+        width: 40px;
+        margin-top: -10px;
+        margin-bottom: -10px;
+        padding-top: 5px;
+        font-size: 1em;
     }
 }
 
@@ -418,6 +463,15 @@ body {
         font-size: 0.8em;
     }
 
+    .icone-alterar-senha {
+        height: 40px;
+        width: 40px;
+        margin-top: -10px;
+        margin-bottom: -10px;
+        padding-top: 5px;
+        font-size: 1em;
+    }
+
 }
 
 @media (max-width: 575px) and (min-width:  426px) {
@@ -518,6 +572,15 @@ body {
         padding: 11px 37px;
         margin-top: 30px;
         font-size: 0.9em;
+    }
+
+    .icone-alterar-senha {
+        height: 40px;
+        width: 40px;
+        margin-top: -10px;
+        margin-bottom: -10px;
+        padding-top: 5px;
+        font-size: 1em;
     }
 
 }
