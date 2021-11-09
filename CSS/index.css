@@ -3,21 +3,37 @@ body {
 }
 
 .div-cadastro {
-    padding: 50px;
+    padding: 10px 30px 10px 30px;
     color: white;
 }
 
 .borda-div-cadastro {
-    padding: 20px;
+    padding: 20px 0px 20px 20px;
     background-color: #72958b;
     border-radius: 20px;
 }
 
+.borda-msg-cadastro {
+    padding: 20px 20px 20px 20px;
+    background-color: #b8ccc1;
+    border-radius: 50px;
+}
+
+.bg-msg-cadastro {
+    background-color: #39605c;
+    height: 100%;
+    padding-top: 70px;
+}
+
 .imagem-cadastro {
-    border-radius: 20px;
-    height: 350px;
-    margin-left: -10px;
-    margin-top: 55px;
+    border-radius: 50px;
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imagem-msg-cadastro {
+    height: 400px;
 }
 
 .div-imagem-cadastro {
@@ -27,8 +43,32 @@ body {
 
 .titulo-principal {
     font-family: 'Lora', serif;
-    font-size: 2.5em;
+    font-size: 2.6em;
     font-weight: 600;
+}
+
+.subtitulo {
+    font-size: 1.5em;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    margin-top: 35px;
+    color: #39605c;
+}
+
+.texto-msg-cadastro {
+    font-size: 2em;
+    font-weight: 600;
+    color: #26403d;
+}
+
+.p-msg-cadastro {
+    padding: 50px;
+}
+
+.cronometro-msg-cadastro {
+    font-size: 1em !important;
+    text-decoration: underline;
+    color: #39605c;
 }
 
 .div-linha {
@@ -38,12 +78,12 @@ body {
     border-radius: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .texto-descricao {
-    font-size: 0.7em;
+    font-size: 0.75em;
     color: #e2e9e7;
 }
 
@@ -59,13 +99,15 @@ body {
 .inputs {
     border: 1px solid transparent;
     border-radius: 20px;
-    color: #b8ccc1;
+    color: #39605c;
     font-size: 0.9em;
     padding: 10px 25px;
-    width: 100%;
+    margin-left: -20px;
+    width: 95%;
+    margin-bottom: 5px;
 }
 
-.inputs:focus {
+.input:focus {
     border: 1px solid #436f6a;
 }
 
@@ -93,14 +135,14 @@ body {
 }
 
 .btn-cadastrar {
-    padding: 8px 30px;
-    margin-top: 20px;
+    padding: 10px 35px;
+    margin-top: 25px;
     border: 1px solid white;
     border-radius: 40px;
     background-color: white;
     color: #436f6a;
     font-weight: 600;
-    font-size: 0.85em;
+    font-size: 1em;
 }
 
 .btn-cadastrar:hover {
@@ -114,16 +156,589 @@ body {
     border: 1px solid #b8ccc1 !important;
 }
 
-@media (max-width: 330px) {}
+.btn-msg-cadastrar {
+    padding: 15px 50px;
+    margin-top: 40px;
+    border: 1px solid #26403d;
+    border-radius: 40px;
+    background-color: #26403d;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1em;
+}
 
-@media (max-width: 425px) and (min-width:  331px) {}
+.btn-msg-cadastrar:hover {
+    background-color: #39605c;
+    border: 1px solid #39605c;
+    color: white;
+    transition: .4s;
+}
 
-@media (max-width: 575px) and (min-width:  426px) {}
+.btn-msg-cadastrar:focus {
+    border: 1px solid #72958b !important;
+}
 
-@media (max-width: 767px) and (min-width: 576px) {}
+.validacao-campo {
+    font-size: 0.6em;
+    letter-spacing: 0.5px;
+    text-align: right;
+    margin: 3px 50px -14px 0px;
+    color: #ff3333;
+    display: none;
+}
 
-@media (max-width: 991px) and (min-width: 768px) {}
+#linha_responsivo {
+    display: none;
+    margin-top: 40px;
+    width: 90%;
+}
 
-@media (max-width: 1200px) and (min-width: 992px) {}
+.btn-login {
+    padding: 12px 50px;
+    margin-top: 25px;
+    border: 1px solid white;
+    border-radius: 40px;
+    background-color: white;
+    color: #436f6a;
+    font-weight: 600;
+    font-size: 1em;
+}
 
-@media (min-width: 1201px) {}
+.btn-login:hover {
+    background-color: #436f6a;
+    border: 1px solid #436f6a;
+    color: #b8ccc1;
+    transition: .4s;
+}
+
+.btn-login:focus {
+    border: 1px solid #b8ccc1 !important;
+}
+
+@media (max-width: 330px) {
+    .imagem-cadastro {
+        margin-left: -15px;
+        height: 235px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .titulo-principal {
+        font-size: 1.8em;
+    }
+    
+    .subtitulo {
+        font-size: 1.2em;
+        margin-top: 15px;
+        color: white;
+    }
+    
+    .div-linha {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .texto-descricao {
+        font-size: 0.7em;
+    }
+
+    .div-cadastro {
+        padding: unset;
+        order: 1;
+    }
+
+    .borda-div-cadastro {
+        padding: 40px 20px 25px 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .inputs {
+        width: 100%;
+        margin-left: -7px;
+        font-size: 0.7em;
+        padding: 9px 20px;
+    }
+
+    .validacao-campo {
+        margin: 3px 30px -14px 0px;
+    }
+
+    .div-icones-input {
+        font-size: 1.1em;
+        padding-top: 6px;
+        margin-left: -2px;
+        width: 36px;
+        height: 36px;
+    }
+
+    .btn-cadastrar {
+        padding: 8px 35px;
+        margin-top: 25px;
+        font-size: 0.9em;
+    }
+
+    .div-imagem-cadastro {
+        order: 2;
+        background-color: unset;
+    }
+
+    #linha_responsivo {
+        display: block;
+    }
+
+    .texto-msg-cadastro {
+        font-size: 1em;
+    }
+
+    .imagem-msg-cadastro {
+        height: 200px;
+        margin-top: 10px;
+    }
+
+    .p-msg-cadastro {
+        padding: 10px;
+        padding-top: 25px;
+    }
+
+    .borda-msg-cadastro {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .cronometro-msg-cadastro {
+        font-size: 0.8em !important;
+    }
+
+    .btn-msg-cadastrar {
+        padding: 10px 30px;
+        margin-top: 30px;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 425px) and (min-width:  331px) {
+    .imagem-cadastro {
+        margin-left: -10px;
+        height: 235px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .titulo-principal {
+        font-size: 1.9em;
+    }
+    
+    .subtitulo {
+        font-size: 1.2em;
+        margin-top: 15px;
+        color: white;
+    }
+    
+    .div-linha {
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    
+    .texto-descricao {
+        font-size: 0.7em;
+    }
+
+    .div-cadastro {
+        padding: unset;
+        order: 1;
+    }
+
+    .borda-div-cadastro {
+        padding: 40px 20px 25px 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .inputs {
+        width: 95%;
+        margin-left: -7px;
+        font-size: 0.7em;
+        padding: 9px 20px;
+    }
+
+    .validacao-campo {
+        margin: 3px 30px -14px 0px;
+    }
+
+    .div-icones-input {
+        font-size: 1.1em;
+        padding-top: 6px;
+        margin-left: -2px;
+        width: 36px;
+        height: 36px;
+    }
+
+    .btn-cadastrar {
+        padding: 8px 35px;
+        margin-top: 25px;
+        font-size: 0.9em;
+    }
+
+    .div-imagem-cadastro {
+        order: 2;
+        background-color: unset;
+    }
+
+    #linha_responsivo {
+        display: block;
+    }
+
+    .texto-msg-cadastro {
+        font-size: 1em;
+    }
+
+    .imagem-msg-cadastro {
+        height: 215px;
+        margin-top: 10px;
+    }
+
+    .p-msg-cadastro {
+        padding: 10px;
+        padding-top: 25px;
+    }
+
+    .borda-msg-cadastro {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .cronometro-msg-cadastro {
+        font-size: 0.8em !important;
+    }
+
+    .btn-msg-cadastrar {
+        padding: 10px 30px;
+        margin-top: 30px;
+        font-size: 0.8em;
+    }
+
+}
+
+@media (max-width: 575px) and (min-width:  426px) {
+
+    .imagem-cadastro {
+        margin-left: -15px;
+        height: 300px;
+    }
+
+    .titulo-principal {
+        font-size: 2em;
+    }
+    
+    .subtitulo {
+        font-size: 1.4em;
+        margin-top: 15px;
+        color: white;
+    }
+    
+    .div-linha {
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    
+    .texto-descricao {
+        font-size: 0.7em;
+    }
+
+    .div-cadastro {
+        padding: unset;
+        order: 1;
+    }
+
+    .borda-div-cadastro {
+        padding: 40px 20px 25px 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .inputs {
+        width: 100%;
+        margin-left: -10px;
+        font-size: 0.8em;
+        padding: 9px 20px;
+        margin-bottom: 5px;
+    }
+
+    .validacao-campo {
+        margin: 3px 30px -14px 0px;
+    }
+
+    .div-icones-input {
+        font-size: 1.1em;
+        padding-top: 7px;
+        margin-left: 5px;
+        width: 39px;
+        height: 39px;
+    }
+
+    .btn-cadastrar {
+        padding: 8px 35px;
+        margin-top: 25px;
+        font-size: 0.9em;
+    }
+
+    .div-imagem-cadastro {
+        order: 2;
+        background-color: unset;
+    }
+
+    #linha_responsivo {
+        display: block;
+    }
+
+    .texto-msg-cadastro {
+        font-size: 1.19em;
+    }
+
+    .imagem-msg-cadastro {
+        height: 250px;
+        margin-top: 10px;
+    }
+
+    .p-msg-cadastro {
+        padding: 20px;
+    }
+
+    .borda-msg-cadastro {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .cronometro-msg-cadastro {
+        font-size: 0.82em !important;
+    }
+
+    .btn-msg-cadastrar {
+        padding: 11px 37px;
+        margin-top: 30px;
+        font-size: 0.9em;
+    }
+
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+
+    .imagem-cadastro {
+        margin-left: -unset;
+        height: 350px;
+    }
+
+    .titulo-principal {
+        font-size: 2.15em;
+    }
+    
+    .subtitulo {
+        font-size: 1.4em;
+        margin-top: 40px;
+        color: white;
+    }
+    
+    .div-linha {
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    
+    .texto-descricao {
+        font-size: 0.7em;
+    }
+
+    #linha_responsivo {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .div-cadastro {
+        padding: unset;
+        order: 1;
+    }
+
+    .borda-div-cadastro {
+        padding: 45px 20px 20px 20px;
+    }
+
+    .inputs {
+        width: 97%;
+        margin-left: -15px;
+        font-size: 0.8em;
+        padding: 10px 30px;
+        margin-bottom: 10px;
+    }
+
+    .validacao-campo {
+        margin: 3px 30px -14px 0px;
+    }
+
+    .div-icones-input {
+        font-size: 1.1em;
+        padding-top: 8px;
+        margin-left: 12px;
+    }
+
+    .btn-cadastrar {
+        padding: 8px 35px;
+        margin-top: 25px;
+        font-size: 0.9em;
+    }
+
+    .div-imagem-cadastro {
+        order: 2;
+        background-color: unset;
+    }
+
+    .texto-msg-cadastro {
+        font-size: 1.5em;
+    }
+
+    .imagem-msg-cadastro {
+        height: 350px;
+        margin-top: 20px;
+    }
+
+    .p-msg-cadastro {
+        padding: 35px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    
+    .imagem-cadastro {
+        border-radius: 50px;
+        margin-left: -15px;
+        height: 280px;
+    }
+
+    .titulo-principal {
+        font-size: 2.15em;
+    }
+    
+    .subtitulo {
+        font-size: 1.2em;
+        margin-top: 40px;
+    }
+    
+    .div-linha {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .texto-descricao {
+        font-size: 0.68em;
+    }
+
+    .div-cadastro {
+        padding: 10px 30px 10px 40px;
+    }
+
+    .inputs {
+        width: 97%;
+        margin-left: -15px;
+        font-size: 0.8em;
+        padding: 10px 20px;
+    }
+
+    .validacao-campo {
+        margin: 3px 30px -14px 0px;
+    }
+
+    .div-icones-input {
+        font-size: 1em;
+        padding-top: 8px;
+        margin-left: -12px;
+    }
+
+    .btn-cadastrar {
+        padding: 8px 35px;
+        margin-top: 20px;
+        font-size: 0.9em;
+    }
+
+    .borda-div-cadastro {
+        border-radius: 50px;
+    }
+
+    .div-imagem-cadastro {
+        border-radius: 50px;
+    }
+
+    .imagem-msg-cadastro {
+        height: 370px;
+        margin-top: 20px;
+    }
+
+    .p-msg-cadastro {
+        padding-bottom: 20px;
+    }
+
+    .borda-msg-cadastro {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+
+    .imagem-cadastro {
+        border-radius: 50px;
+        margin-left: -10px;
+        height: 360px;
+    }
+
+    .inputs {
+        margin-left: -12px;
+        width: 97%;
+    }
+
+    .validacao-campo {
+        margin: 3px 30px -14px 0px;
+    }
+
+    .borda-div-cadastro {
+        border-radius: 50px;
+    }
+
+    .div-imagem-cadastro {
+        border-radius: 50px;
+    }
+
+    .texto-msg-cadastro {
+        font-size: 1.9em;
+    }
+}
+
+@media (min-width: 1201px) {
+
+    .imagem-cadastro {
+        border-radius: 50px;
+        margin-left: -10px;
+        height: 385px;
+    }
+    
+    .div-imagem-cadastro {
+        border-radius: 50px;
+    }
+
+    .div-cadastro {
+        padding: 20px 30px 20px 30px;
+        color: white;
+    }
+
+    .borda-div-cadastro {
+        border-radius: 50px;
+    }
+
+    .borda-msg-cadastro {
+        padding: 60px 30px 70px 30px;
+        color: white;
+    }
+
+    .imagem-msg-cadastro {
+        height: 430px;
+    }
+}
