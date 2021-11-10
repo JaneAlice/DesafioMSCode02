@@ -224,6 +224,24 @@ body {
     transition: .4s;
 }
 
+.btn-alterar-senha {
+    padding: 11px 50px;
+    margin-top: 25px;
+    border: 2px solid white;
+    border-radius: 40px;
+    background-color: white;
+    color: #39605c;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.btn-alterar-senha:hover {
+    background-color: #26403d;
+    border: 2px solid #26403d;
+    color: white;
+    transition: .4s;
+}
+
 .input-alterar-senha {
     border: 1px solid #72958b;
     border-radius: 20px;
@@ -251,7 +269,7 @@ body {
     font-size: 1.3em;
     border: 2px solid #39605c;
     border-radius: 100%;
-    background-color: #26403d1a;
+    background-color: #ffffff30;
 }
 
 .fa-eye {
@@ -414,6 +432,16 @@ body {
         font-size: 0.75em;
         margin-right: 5px;
     }
+    
+    .linha-senha-responsivo {
+        border-bottom: 1px solid #26403d;
+        width: 95%;
+        margin: 15px auto 45px auto;
+    }
+
+    .p-alterar-senha {
+        padding-top: unset;
+    }
 }
 
 @media (max-width: 425px) and (min-width:  331px) {
@@ -547,6 +575,16 @@ body {
         font-size: 0.75em;
         margin-right: 5px;
     }
+    
+    .linha-senha-responsivo {
+        border-bottom: 1px solid #26403d;
+        width: 95%;
+        margin: 15px auto 45px auto;
+    }
+
+    .p-alterar-senha {
+        padding-top: unset;
+    }
 
 }
 
@@ -672,6 +710,16 @@ body {
         font-size: 1em;
     }
 
+    .linha-senha-responsivo {
+        border-bottom: 1px solid #26403d;
+        width: 95%;
+        margin: 25px auto 55px auto;
+    }
+
+    .p-alterar-senha {
+        padding-top: unset;
+    }
+
 }
 
 @media (max-width: 767px) and (min-width: 576px) {
@@ -765,6 +813,16 @@ body {
     .p-msg-cadastro {
         padding: 35px;
     }
+
+    .linha-senha-responsivo {
+        border-bottom: 1px solid #26403d;
+        width: 95%;
+        margin: 25px auto 55px auto;
+    }
+
+    .p-alterar-senha {
+        padding-top: unset;
+    }
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
@@ -791,6 +849,10 @@ body {
     .imagem-cadastro {
         margin-left: -34px;
         height: 275px;
+    }
+
+    .img-cadastro-senha {
+        margin-left: -20px !important;
     }
 
     .titulo-principal {
