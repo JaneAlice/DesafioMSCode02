@@ -20,61 +20,144 @@
     </head>
     <body>
 
-        <section class="container pt-5">
-            <div class="row borda-div-cadastro">
-                <div class="col-lg-6 col-md-5 col-sm-12 bg-cadastro div-imagem-cadastro text-center">
-                    <h1 class="subtitulo">Venha administrar suas<br>finanças conosco!</h1>
-                    <img class="imagem-cadastro" src="../Imagens/ImagemCadastrar.png"/>
+        <header class="bg-light position-fixed shadow-lg w-100">
+            <div class="container">
+                <div class="row menu-monitor py-lg-3 py-md-2">
+                    <div class="col-lg-3 col-md-2">
+                        <a href="#"><img class="imagem-logo" src="../Imagens/escashlogotexto.png"/></a>
+                    </div>
+                    <div class="col-lg-9 col-md-10 text-end">
+                        <a class="link-header" href="#">Funcionalidades</a>
+                        <a class="link-header" href="#">Planos e Preços</a>
+                        <a class="link-header" href="#">Fale conosco</a>
+                        <button type="button" class="btn btn-header">Experimente Grátis</button>
+                        <button type="button" class="btn btn-header ms-lg-3 ms-md-1">Login</button>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-md-7 col-sm-12 div-cadastro text-center">
-                    <h6 class="titulo-principal mt-lg-3">Cadastre-se</h6>
-                    <div class="div-linha"></div>
-                    <span class="texto-descricao">Já possui cadastro? Faça
-                        <a class="link" href="../HTML/login.html"> Login</a>.
-                    </span>
-
-                    <div class="row my-4">
-                        <div class="col-2">
-                            <div class="div-icones-input shadow"><i class="far fa-user"></i></div>
-                        </div>
-                        <div class="col-10">
-                            <input class="form-control inputs shadow" type="text" placeholder="Nome Completo">
-                        </div>
+                <div class="row menu-mobile py-2">
+                    <div class="col-6">
+                        <a href="#"><img class="imagem-logo" src="../Imagens/escashlogotexto.png"/></a>
                     </div>
-                    <div class="row mb-4">
-                        <div class="col-2">
-                            <div class="div-icones-input shadow"><i class="far fa-address-card"></i></div>
-                        </div>
-                        <div class="col-10">
-                            <input class="form-control inputs shadow" type="text" placeholder="CPF">
-                            <p class="validacao-campo text-danger">CPF inválido!</p>
-                            <p class="validacao-campo text-danger">Esse CPF já está cadastrado!</p>
-                        </div>
+                    <div class="col-6 text-end">
+                        <i class="fas fa-bars"></i>
                     </div>
-                    <div class="row mb-lg-5 mb-md-4 mb-sm-4 mb-4">
-                        <div class="col-2">
-                            <div class="div-icones-input shadow"><i class="fas fa-at"></i></div>
-                        </div>
-                        <div class="col-10">
-                            <input class="form-control inputs shadow" type="text" placeholder="E-mail">
-                            <p class="validacao-campo text-danger">E-mail inválido!</p>
-                            <p class="validacao-campo text-danger">Esse E-mail já está cadastrado!</p>
-                        </div>
+                </div>
+            </div>
+        </header>
+        <section class="bg-verde-escuro py-5">
+            <div class="container">
+                <div class="row borda-div-cadastro">
+                    <div class="col-lg-6 col-md-5 col-sm-12 text-center">
+                        <h1 class="subtitulo">Venha administrar suas<br>finanças conosco!</h1>
+                        <img class="imagem-cadastro" src="../Imagens/ImagemCadastrar.png"/>
                     </div>
-                    <div class="texto-descricao text-center">
-                        <input class="form-check-input mt-0" type="checkbox" id="checkbox_cadastro" aria-label="Checkbox for following text input">
-                        <label for="checkbox_cadastro">Lembrar identificação</label>
-                        <br>
-                        <span class="termo-privacidade">
-                            Ao prosseguir, estou de acordo com os <a class="link" href="#">Termos de Uso</a> e<br><a class="link"" href="#">Política de Privacidade</a> do
+                    <div class="col-lg-6 col-md-7 col-sm-12 div-cadastro bg-light text-center">
+                        <h6 class="titulo-principal mt-lg-3">Cadastre-se</h6>
+                        <div class="div-linha"></div>
+                        <span class="texto-descricao">Já possui cadastro? Faça
+                            <a class="link" href="../HTML/login.html"> Login</a>.
                         </span>
+    
+                        <div class="row my-4">
+                            <div class="col-2">
+                                <div class="div-icones-input shadow"><i class="far fa-user"></i></div>
+                            </div>
+                            <div class="col-10">
+                                <input class="form-control inputs shadow" type="text" placeholder="Nome Completo">
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-2">
+                                <div class="div-icones-input shadow"><i class="far fa-address-card"></i></div>
+                            </div>
+                            <div class="col-10">
+                                <input class="form-control inputs shadow" type="text" placeholder="CPF">
+                                <p class="validacao-campo text-danger">CPF inválido!</p>
+                                <p class="validacao-campo text-danger">Esse CPF já está cadastrado!</p>
+                            </div>
+                        </div>
+                        <div class="row mb-lg-4 mb-md-4 mb-sm-4 mb-4">
+                            <div class="col-2">
+                                <div class="div-icones-input shadow"><i class="fas fa-at"></i></div>
+                            </div>
+                            <div class="col-10">
+                                <input class="form-control inputs shadow" type="text" placeholder="E-mail">
+                                <p class="validacao-campo text-danger">E-mail inválido!</p>
+                                <p class="validacao-campo text-danger">Esse E-mail já está cadastrado!</p>
+                            </div>
+                        </div>
+                        <div class="texto-descricao text-center">
+                            <input class="form-check-input mt-0" type="checkbox" id="checkbox_cadastro" aria-label="Checkbox for following text input">
+                            <label for="checkbox_cadastro">Lembrar identificação</label>
+                            <br>
+                            <span class="termo-privacidade">
+                                Ao prosseguir, estou de acordo com os <a class="link" href="#">Termos de Uso</a> e<br><a class="link"" href="#">Política de Privacidade</a> do
+                            </span>
+                        </div>
+                        <button type="button" class="btn btn-cadastrar shadow-lg">Cadastrar</button>
                     </div>
-                    <button type="button" class="btn btn-cadastrar shadow-lg">Cadastrar</button>
-                    <div class="div-linha" id="linha_responsivo"></div>
                 </div>
             </div>
         </section>
-
+        <footer class="bg-light">
+            <div class="container">
+                <div class="row py-lg-5 py-md-5 py-4">
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-6 mb-lg-0 mb-md-0 mb-sm-4 mb-4">
+                        <a class="link-header" href="#" style="color: #1b2d2b">Escash</a>
+                        <br>
+                        <b class="texto-descricao">Suas finanças controladas.</b>
+                        <div class="d-flex mt-2">
+                            <div class="icone-footer">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="icone-footer">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div class="icone-footer">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <div class="icone-footer">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-6 mb-lg-0 mb-md-0 mb-sm-0 mb-4 texto-descricao" style="line-height: 25px;">
+                        <h6 style="color: #1b2d2b">
+                            <b>Sistema</b>
+                        </h6>
+                        <a class="link-header" href="#">Funcionalidades</a> <br>
+                        <a class="link-header" href="#">Planos e preços</a> <br>
+                        <a class="link-header" href="#">Cadastrar</a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-6 texto-descricao" style="line-height: 25px;">
+                        <h6 style="color: #1b2d2b">
+                            <b>Blog</b>
+                        </h6>
+                        <a class="link-header" href="#">Finanças</a> <br>
+                        <a class="link-header" href="#">Planejamento</a> <br>
+                        <a class="link-header" href="#">Novidades</a>
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-sm-4 col-6 texto-descricao" style="line-height: 25px;">
+                        <h6 style="color: #1b2d2b">
+                            <b>Dúvidas</b>
+                        </h6>
+                        <a class="link-header" href="#">(27) 3765-0000</a> <br>
+                        <a class="link-header" href="#">Fale conosco</a> <br>
+                        <a class="link-header" href="#">FAQ</a>
+                    </div>
+                    <div class="col-12 my-3">
+                        <div class="div-linha w-100"></div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12 texto-descricao">
+                        Copyright © Escash 2021
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12 text-lg-end text-md-end text-sm-end text-start texto-descricao">
+                        <a href="#" class="link-header" style="margin-right: unset;">Termos de uso </a> • 
+                        <a href="#" class="link-header" style="margin-right: unset;"> Políticas de privacidade</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <!-- Optional JavaScript; choose one of the two! -->
 

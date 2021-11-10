@@ -2,16 +2,49 @@ body {
     font-family: 'Merriweather', serif;
 }
 
+.link-header {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: #39605c;
+    margin-right: 30px;
+}
+
+.link-header:hover {
+    color: #1d302e;
+}
+
+.btn-header {
+    padding: 11px 30px;
+    border: 2px solid #39605c;
+    border-radius: 40px;
+    background-color: #39605c;
+    color: #f8f9fa;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.btn-header:hover {
+    border: 2px solid #39605c;
+    background-color: #f8f9fa;
+    color: #39605c;
+}
+
+.bg-verde-escuro {
+    background-color: #fff;
+    background-image: linear-gradient( #1d302e 70%, #39605c 100%);
+}
 
 .div-cadastro {
-    padding: 10px 30px 10px 30px;
-    color: white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 50px;
 }
 
 .borda-div-cadastro {
-    padding: 20px 0px 20px 20px;
+    padding: 30px;
     background-color: #72958b;
     border-radius: 20px;
+    margin-top: 70px;
 }
 
 .borda-msg-cadastro {
@@ -20,16 +53,9 @@ body {
     border-radius: 50px;
 }
 
-.bg-msg-cadastro {
-    background-color: #39605c;
-    height: 100%;
-    padding-top: 70px;
-}
-
 .imagem-cadastro {
-    border-radius: 50px;
     height: 400px;
-    margin-top: 20px;
+    margin-top: 35px;
     margin-bottom: 20px;
 }
 
@@ -37,23 +63,19 @@ body {
     height: 400px;
 }
 
-.div-imagem-cadastro {
-    background-color: white;
-    border-radius: 20px;
-}
-
 .titulo-principal {
     font-family: 'Lora', serif;
     font-size: 2.6em;
     font-weight: 600;
+    color: #39605c;
 }
 
 .subtitulo {
     font-size: 1.5em;
     font-family: 'Lora', serif;
     font-weight: 600;
-    margin-top: 35px;
-    color: #39605c;
+    margin-top: 40px;
+    color: white;
 }
 
 .texto-msg-cadastro {
@@ -85,20 +107,20 @@ body {
 
 .texto-descricao {
     font-size: 0.75em;
-    color: #e2e9e7;
+    color: #39605c;
 }
 
 .link {
-    color: #436f6a;
+    color: #39605c;
 }
 
 .link:hover {
-    color: #e2e9e7;
+    color: #26403d;
     transition: .4s;
 }
 
 .inputs {
-    border: 2px solid transparent;
+    border: 1px solid #72958b;
     border-radius: 20px;
     color: #39605c;
     font-size: 0.9em;
@@ -109,7 +131,7 @@ body {
 }
 
 .inputs:focus {
-    border: 2px solid #436f6a;
+    border: 1px solid #26403d;
 }
 
 .inputs::placeholder {
@@ -118,10 +140,10 @@ body {
 
 .div-icones-input {
     margin-right: 20px;
-    background-color: white;
+    background-color: #39605c;
     border-radius: 100%;
     width: 41px;
-    height: 41px; color: #436f6a;
+    height: 41px; color: white;
     font-size: 1.2em;
     padding-top: 6px;
 }
@@ -136,25 +158,21 @@ body {
 }
 
 .btn-cadastrar {
-    padding: 10px 35px;
+    padding: 9px 35px;
     margin-top: 25px;
-    border: 1px solid white;
+    border: 2px solid #39605c;
     border-radius: 40px;
-    background-color: white;
-    color: #436f6a;
+    background-color: #39605c;
+    color: white;
     font-weight: 600;
     font-size: 1em;
 }
 
 .btn-cadastrar:hover {
-    background-color: #26403d;
-    border: 1px solid #26403d;
-    color: #b8ccc1;
+    background-color: white;
+    border: 2px solid #26403d;
+    color: #26403d;
     transition: .4s;
-}
-
-.btn-cadastrar:focus {
-    border: 1px solid #b8ccc1 !important;
 }
 
 .btn-msg-cadastrar {
@@ -188,36 +206,26 @@ body {
     display: none;
 }
 
-#linha_responsivo {
-    display: none;
-    margin-top: 40px;
-    width: 90%;
-}
-
 .btn-login {
-    padding: 12px 50px;
+    padding: 11px 50px;
     margin-top: 25px;
-    border: 1px solid white;
+    border: 2px solid #39605c;
     border-radius: 40px;
-    background-color: white;
-    color: #436f6a;
+    background-color: #39605c;
+    color: white;
     font-weight: 600;
     font-size: 1em;
 }
 
 .btn-login:hover {
-    background-color: #436f6a;
-    border: 1px solid #436f6a;
-    color: #b8ccc1;
+    background-color: white;
+    border: 2px solid #26403d;
+    color: #26403d;
     transition: .4s;
 }
 
-.btn-login:focus {
-    border: 1px solid #b8ccc1 !important;
-}
-
 .input-alterar-senha {
-    border: 2px solid transparent;
+    border: 1px solid #72958b;
     border-radius: 20px;
     color: #39605c;
     font-size: 0.9em;
@@ -226,7 +234,7 @@ body {
 }
 
 .input-alterar-senha:focus {
-    border: 2px solid #436f6a;
+    border: 1px solid #26403d;
 }
 
 .input-alterar-senha::placeholder {
@@ -239,16 +247,54 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-top: 5px;
-    color: white;
+    color: #39605c;
     font-size: 1.3em;
-    border: 2px solid white;
+    border: 2px solid #39605c;
     border-radius: 100%;
-    background-color: #b8ccc12f;
+    background-color: #26403d1a;
+}
+
+.fa-eye {
+    position: absolute;
+    right: 16px;
+    top: 14px;
+    color: #436f6a;
+}
+
+.icone-footer {
+    height: 30px;
+    width: 30px;
+    background-color: #1b2d2b;
+    color: #f8f9fa;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 6px;
+    font-size: 0.9em;
+    margin-right: 10px;
+}
+
+.fa-bars {
+    color: #39605c;
+    font-size: 1.5em;
+    margin-top: 9px;
 }
 
 @media (max-width: 330px) {
+    
+    .menu-monitor {
+        display: none;
+    }
+
+    .imagem-logo {
+        height: 40px;
+        margin-left: 10px;
+    }
+    
+    .fa-bars {
+        margin-right: 10px;
+    }
+    
     .imagem-cadastro {
-        margin-left: -15px;
         height: 235px;
         margin-bottom: 10px;
         margin-top: 10px;
@@ -260,7 +306,7 @@ body {
     
     .subtitulo {
         font-size: 1.2em;
-        margin-top: 15px;
+        margin-top: 5px;
         color: white;
     }
     
@@ -274,14 +320,17 @@ body {
     }
 
     .div-cadastro {
-        padding: unset;
+        margin-top: 30px;
+        padding: 30px 10px;
+        border-radius: 20px;
         order: 1;
     }
 
     .borda-div-cadastro {
-        padding: 40px 20px 25px 20px;
+        padding: 40px 10px 25px 10px;
         margin-left: 5px;
         margin-right: 5px;
+        margin-top: 40px;
     }
 
     .inputs {
@@ -312,10 +361,6 @@ body {
     .div-imagem-cadastro {
         order: 2;
         background-color: unset;
-    }
-
-    #linha_responsivo {
-        display: block;
     }
 
     .texto-msg-cadastro {
@@ -360,12 +405,34 @@ body {
         padding-top: 5px;
         font-size: 1em;
     }
+
+    .icone-footer {
+        height: 25px;
+        width: 25px;
+        padding-top: 4px;
+        font-size: 0.75em;
+        margin-right: 5px;
+    }
 }
 
 @media (max-width: 425px) and (min-width:  331px) {
+
+    .menu-monitor {
+        display: none;
+    }
+
+    .imagem-logo {
+        height: 40px;
+        margin-left: 10px;
+    }
+    
+    .fa-bars {
+        margin-right: 10px;
+    }
+
     .imagem-cadastro {
-        margin-left: -10px;
-        height: 235px;
+        margin-left: 0px;
+        height: 240px;
         margin-bottom: 10px;
         margin-top: 10px;
     }
@@ -376,7 +443,7 @@ body {
     
     .subtitulo {
         font-size: 1.2em;
-        margin-top: 15px;
+        margin-top: 0px;
         color: white;
     }
     
@@ -390,18 +457,21 @@ body {
     }
 
     .div-cadastro {
-        padding: unset;
+        padding: 35px 10px;
         order: 1;
+        border-radius: 20px;
+        margin-top: 30px;
     }
 
     .borda-div-cadastro {
-        padding: 40px 20px 25px 20px;
+        padding: 35px 10px 20px 10px;
         margin-left: 5px;
         margin-right: 5px;
+        margin-top: 50px;
     }
 
     .inputs {
-        width: 95%;
+        width: 100%;
         margin-left: -7px;
         font-size: 0.7em;
         padding: 9px 20px;
@@ -428,10 +498,6 @@ body {
     .div-imagem-cadastro {
         order: 2;
         background-color: unset;
-    }
-
-    #linha_responsivo {
-        display: block;
     }
 
     .texto-msg-cadastro {
@@ -472,12 +538,33 @@ body {
         font-size: 1em;
     }
 
+    .icone-footer {
+        height: 25px;
+        width: 25px;
+        padding-top: 4px;
+        font-size: 0.75em;
+        margin-right: 5px;
+    }
+
 }
 
 @media (max-width: 575px) and (min-width:  426px) {
 
+    .menu-monitor {
+        display: none;
+    }
+
+    .imagem-logo {
+        height: 45px;
+        margin-left: 10px;
+    }
+    
+    .fa-bars {
+        margin-right: 10px;
+    }
+
     .imagem-cadastro {
-        margin-left: -15px;
+        margin-left: unset;
         height: 300px;
     }
 
@@ -487,7 +574,7 @@ body {
     
     .subtitulo {
         font-size: 1.4em;
-        margin-top: 15px;
+        margin-top: 5px;
         color: white;
     }
     
@@ -501,8 +588,10 @@ body {
     }
 
     .div-cadastro {
-        padding: unset;
+        padding: 25px 5px 25px 5px;
         order: 1;
+        border-radius: 20px;
+        margin-top: 20px;
     }
 
     .borda-div-cadastro {
@@ -540,10 +629,6 @@ body {
     .div-imagem-cadastro {
         order: 2;
         background-color: unset;
-    }
-
-    #linha_responsivo {
-        display: block;
     }
 
     .texto-msg-cadastro {
@@ -587,9 +672,17 @@ body {
 
 @media (max-width: 767px) and (min-width: 576px) {
 
+    .menu-monitor {
+        display: none;
+    }
+
+    .imagem-logo {
+        height: 45px;
+    }
+
     .imagem-cadastro {
-        margin-left: -unset;
-        height: 350px;
+        margin-left: unset;
+        height: 370px;
     }
 
     .titulo-principal {
@@ -598,7 +691,7 @@ body {
     
     .subtitulo {
         font-size: 1.4em;
-        margin-top: 40px;
+        margin-top: 15px;
         color: white;
     }
     
@@ -611,14 +704,11 @@ body {
         font-size: 0.7em;
     }
 
-    #linha_responsivo {
-        display: block;
-        margin-top: 50px;
-    }
-
     .div-cadastro {
-        padding: unset;
+        padding: 30px 0px 30px 0px;
+        border-radius: 20px;
         order: 1;
+        margin-top: 20px;
     }
 
     .borda-div-cadastro {
@@ -669,11 +759,29 @@ body {
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
+
+    .menu-mobile {
+        display: none;
+    }
     
+    .imagem-logo {
+        height: 40px;
+    }
+
+    .btn-header {
+        padding: 7px 15px;
+        font-size: 0.7em;
+        margin-top: 5px;
+    }
+
+    .link-header {
+        font-size: 0.8em;
+        margin-right: 10px;
+    }
+
     .imagem-cadastro {
-        border-radius: 50px;
-        margin-left: -15px;
-        height: 280px;
+        margin-left: -34px;
+        height: 275px;
     }
 
     .titulo-principal {
@@ -682,7 +790,7 @@ body {
     
     .subtitulo {
         font-size: 1.2em;
-        margin-top: 40px;
+        margin-top: 60px;
     }
     
     .div-linha {
@@ -695,7 +803,7 @@ body {
     }
 
     .div-cadastro {
-        padding: 10px 30px 10px 40px;
+        padding: 30px 30px 30px 40px;
     }
 
     .inputs {
@@ -747,6 +855,23 @@ body {
 
 @media (max-width: 1200px) and (min-width: 992px) {
 
+    .menu-mobile {
+        display: none;
+    }
+
+    .imagem-logo {
+        height: 50px;
+    }
+
+    .link-header {
+        font-size: 0.8em;
+        margin-right: 18px;
+    }
+    
+    .btn-header {
+        font-size: 0.8em;
+    }
+
     .imagem-cadastro {
         border-radius: 50px;
         margin-left: -10px;
@@ -773,9 +898,25 @@ body {
     .texto-msg-cadastro {
         font-size: 1.9em;
     }
+    
+    .div-icones-input {
+        margin-left: 12px;
+    }
+
+    .div-cadastro {
+        padding: 30px 10px 30px 10px;
+    }
 }
 
 @media (min-width: 1201px) {
+
+    .menu-mobile {
+        display: none;
+    }
+
+    .imagem-logo {
+        height: 50px;
+    }
 
     .imagem-cadastro {
         border-radius: 50px;
@@ -788,8 +929,7 @@ body {
     }
 
     .div-cadastro {
-        padding: 20px 30px 20px 30px;
-        color: white;
+        padding: 30px 30px 35px 30px;
     }
 
     .borda-div-cadastro {

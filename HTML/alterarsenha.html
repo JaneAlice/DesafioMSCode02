@@ -20,33 +20,44 @@
     </head>
     <body>
 
-        <section class="container mt-5">
-            <div class="row borda-div-cadastro">
-                <div class="col-lg-6 col-md-5 col-sm-12 bg-cadastro div-imagem-cadastro text-center">
-                    <h1 class="subtitulo">Venha administrar suas<br>finanças conosco!</h1>
-                    <img class="imagem-cadastro" src="../Imagens/ImagemCadastrar.png"/>
-                </div>
-                <div class="col-lg-6 col-md-7 col-sm-12 div-cadastro text-center">
-                    <h6 class="titulo-principal mt-lg-3">Alterar senha</h6>
-                    <div class="div-linha"></div>
-                    <div class="icone-alterar-senha"><i class="fas fa-unlock-alt"></i></div>
-
-                    <div class="row mt-4 px-3 p-retirar">
-                        <div class="col-12 mb-4">
-                            <input class="form-control input-alterar-senha shadow" type="text" placeholder="Senha atual">
-                            <p class="validacao-campo text-danger">Senha inválida</p>
-                        </div>
-                        <div class="col-12 mb-4">
-                            <input class="form-control input-alterar-senha shadow" type="text" placeholder="Nova senha">
-                            <p class="validacao-campo text-danger">E-mail inválido!</p>
-                        </div>
-                        <div class="col-12 mb-4">
-                            <input class="form-control input-alterar-senha shadow" type="text" placeholder="Confirme sua nova senha">
-                            <p class="validacao-campo text-danger">E-mail inválido!</p>
-                        </div>
+        <section class="bg-verde-escuro pt-5">
+            <div class="container">
+                <div class="row borda-div-cadastro">
+                    <div class="col-lg-6 col-md-5 col-sm-12 bg-cadastro div-imagem-cadastro text-center">
+                        <h1 class="subtitulo">Venha administrar suas<br>finanças conosco!</h1>
+                        <img class="imagem-cadastro" src="../Imagens/ImagemCadastrar.png"/>
                     </div>
-                    <button type="button" class="btn btn-login shadow-lg">Alterar</button>
-                    <div class="div-linha" id="linha_responsivo"></div>
+                    <div class="col-lg-6 col-md-7 col-sm-12 div-cadastro text-center">
+                        <h6 class="titulo-principal mt-lg-3">Alterar senha</h6>
+                        <div class="div-linha"></div>
+                        <div class="icone-alterar-senha"><i class="fas fa-unlock-alt"></i></div>
+    
+                        <div class="row mt-4 px-3 p-retirar">
+                            <div class="col-12 mb-4">
+                                <div class="position-relative">
+                                    <input class="form-control input-alterar-senha shadow" type="text" placeholder="Senha atual">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <p class="validacao-campo text-danger">Senha inválida</p>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <div class="position-relative">
+                                    <input class="form-control input-alterar-senha shadow" type="text" placeholder="Nova senha">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <p class="validacao-campo text-danger">E-mail inválido!</p>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <div class="position-relative">
+                                    <input class="form-control input-alterar-senha shadow" type="text" placeholder="Confirme sua nova senha">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <p class="validacao-campo text-danger">E-mail inválido!</p>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-login shadow-lg">Alterar</button>
+                        <div class="div-linha" id="linha_responsivo"></div>
+                    </div>
                 </div>
             </div>
         </section>
