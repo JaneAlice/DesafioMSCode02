@@ -85,7 +85,7 @@ body {
 }
 
 .p-msg-cadastro {
-    padding: 50px;
+    padding: 75px 50px;
 }
 
 .cronometro-msg-cadastro {
@@ -385,6 +385,7 @@ body {
     .borda-msg-cadastro {
         margin-left: 10px;
         margin-right: 10px;
+        margin-top: 50px;
     }
 
     .cronometro-msg-cadastro {
@@ -517,6 +518,7 @@ body {
     .borda-msg-cadastro {
         margin-left: 10px;
         margin-right: 10px;
+        margin-top: 50px;
     }
 
     .cronometro-msg-cadastro {
@@ -647,6 +649,8 @@ body {
     .borda-msg-cadastro {
         margin-left: 20px;
         margin-right: 20px;
+        margin-top: 60px;
+        margin-bottom: 20px;
     }
 
     .cronometro-msg-cadastro {
@@ -713,6 +717,11 @@ body {
 
     .borda-div-cadastro {
         padding: 45px 20px 20px 20px;
+    }
+
+    .borda-msg-cadastro {
+        margin-top: 60px;
+        margin-bottom: 20px;
     }
 
     .inputs {
@@ -849,6 +858,8 @@ body {
     .borda-msg-cadastro {
         margin-left: 20px;
         margin-right: 20px;
+        margin-top: 50px;
+        margin-bottom: 20px;
     }
 
 }
@@ -889,6 +900,15 @@ body {
 
     .borda-div-cadastro {
         border-radius: 50px;
+    }
+
+    .borda-msg-cadastro {
+        margin-top: 90px;
+        margin-bottom: 30px;
+    }
+
+    .p-msg-cadastro {
+        padding: 50px;
     }
 
     .div-imagem-cadastro {
@@ -939,6 +959,8 @@ body {
     .borda-msg-cadastro {
         padding: 60px 30px 70px 30px;
         color: white;
+        margin-top: 100px;
+        margin-bottom: 50px;
     }
 
     .imagem-msg-cadastro {
