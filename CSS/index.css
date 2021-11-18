@@ -2,6 +2,11 @@ body {
     font-family: 'Merriweather', serif;
 }
 
+.bg-verde-escuro {
+    background-color: #fff;
+    background-image: linear-gradient( #1d302e 70%, #39605c 100%);
+}
+
 .link-header {
     text-decoration: none;
     font-size: 1em;
@@ -12,6 +17,7 @@ body {
 
 .link-header:hover {
     color: #1d302e;
+    transition: .5s;
 }
 
 .btn-header {
@@ -28,16 +34,12 @@ body {
     border: 2px solid #39605c;
     background-color: #f8f9fa;
     color: #39605c;
-}
-
-.bg-verde-escuro {
-    background-color: #fff;
-    background-image: linear-gradient( #1d302e 70%, #39605c 100%);
+    transition: .5s;
 }
 
 .div-cadastro {
-    padding: 10px 10px 10px 10px;
     border-radius: 50px;
+    order: 2;
 }
 
 .borda-div-cadastro {
@@ -48,7 +50,7 @@ body {
 }
 
 .borda-msg-cadastro {
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
     background-color: #b8ccc1;
     border-radius: 50px;
 }
@@ -57,6 +59,10 @@ body {
     height: 400px;
     margin-top: 35px;
     margin-bottom: 20px;
+}
+
+.ordem-imagem-cadastro {
+    order: 1;
 }
 
 .imagem-msg-cadastro {
@@ -74,8 +80,13 @@ body {
     font-size: 1.5em;
     font-family: 'Lora', serif;
     font-weight: 600;
-    margin-top: 40px;
+    margin-top: 40px !important;
     color: white;
+}
+
+.texto-descricao {
+    font-size: 0.7em;
+    color: #39605c;
 }
 
 .texto-msg-cadastro {
@@ -103,11 +114,6 @@ body {
     margin-right: auto;
     margin-top: 15px;
     margin-bottom: 15px;
-}
-
-.texto-descricao {
-    font-size: 0.75em;
-    color: #39605c;
 }
 
 .link {
@@ -169,10 +175,10 @@ body {
 }
 
 .btn-cadastrar:hover {
-    background-color: white;
+    background-color: #f8f9fa;
     border: 2px solid #26403d;
     color: #26403d;
-    transition: .4s;
+    transition: .5s;
 }
 
 .btn-msg-cadastrar {
@@ -190,7 +196,7 @@ body {
     background-color: #39605c;
     border: 1px solid #39605c;
     color: white;
-    transition: .4s;
+    transition: .5s;
 }
 
 .btn-msg-cadastrar:focus {
@@ -203,6 +209,9 @@ body {
     text-align: right;
     margin: 3px 50px -14px 0px;
     color: #ff3333;
+}
+
+.display-none {
     display: none;
 }
 
@@ -221,7 +230,7 @@ body {
     background-color: white;
     border: 2px solid #26403d;
     color: #26403d;
-    transition: .4s;
+    transition: .5s;
 }
 
 .btn-alterar-senha {
@@ -239,7 +248,7 @@ body {
     background-color: #26403d;
     border: 2px solid #26403d;
     color: white;
-    transition: .4s;
+    transition: .5s;
 }
 
 .input-alterar-senha {
@@ -260,41 +269,62 @@ body {
 }
 
 .icone-alterar-senha {
-    height: 45px;
-    width: 45px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 40px;
+    width: 40px;
+    margin: -10px auto;
+    font-size: 1em;
     padding-top: 5px;
     color: #39605c;
-    font-size: 1.3em;
     border: 2px solid #39605c;
     border-radius: 100%;
     background-color: #ffffff30;
 }
 
-.fa-eye {
+.olho-alterar-senha {
     position: absolute;
+    font-size: 0.8em;
     right: 16px;
-    top: 14px;
+    top: 16px;
+    color: #436f6a;
+}
+
+.olho-login-senha {
+    position: absolute;
+    font-size: 0.8em;
+    right: 40px;
+    top: 16px;
     color: #436f6a;
 }
 
 .icone-footer {
     height: 30px;
     width: 30px;
+    border: 2px solid #1d302e;
     background-color: #1b2d2b;
     color: #f8f9fa;
     border-radius: 100%;
     text-align: center;
-    padding-top: 6px;
+    padding-top: 4px;
     font-size: 0.9em;
     margin-right: 10px;
+}
+
+.icone-footer:hover {
+    border: 2px solid #1d302e;
+    background-color: #f8f9fa;
+    color: #1b2d2b;
+    transition: .5s;
 }
 
 .fa-bars {
     color: #39605c;
     font-size: 1.5em;
     margin-top: 9px;
+}
+
+.menu-lateral {
+    height: 100vh;
+    position: fixed;
 }
 
 @media (max-width: 330px) {
@@ -317,6 +347,11 @@ body {
         margin-bottom: 10px;
         margin-top: 10px;
     }
+    
+    .ordem-imagem-cadastro {
+        order: 2;
+        margin-top: 40px;
+    }
 
     .titulo-principal {
         font-size: 1.8em;
@@ -332,13 +367,8 @@ body {
         margin-top: 15px;
         margin-bottom: 20px;
     }
-    
-    .texto-descricao {
-        font-size: 0.7em;
-    }
 
     .div-cadastro {
-        margin-top: 30px;
         padding: 30px 10px;
         border-radius: 20px;
         order: 1;
@@ -376,11 +406,6 @@ body {
         font-size: 0.9em;
     }
 
-    .div-imagem-cadastro {
-        order: 2;
-        background-color: unset;
-    }
-
     .texto-msg-cadastro {
         font-size: 1em;
     }
@@ -416,19 +441,10 @@ body {
         font-size: 0.8em;
     }
 
-    .icone-alterar-senha {
-        height: 40px;
-        width: 40px;
-        margin-top: -10px;
-        margin-bottom: -10px;
-        padding-top: 5px;
-        font-size: 1em;
-    }
-
     .icone-footer {
         height: 25px;
         width: 25px;
-        padding-top: 4px;
+        padding-top: 2px;
         font-size: 0.75em;
         margin-right: 5px;
     }
@@ -436,11 +452,20 @@ body {
     .linha-senha-responsivo {
         border-bottom: 1px solid #26403d;
         width: 95%;
-        margin: 15px auto 45px auto;
+        margin: 0px auto 45px auto;
     }
 
     .p-alterar-senha {
         padding-top: unset;
+    }
+
+    .input-alterar-senha {
+        font-size: 0.8em;
+    }
+
+    .olho-login-senha {
+        right: 20px;
+        top: 13px;
     }
 }
 
@@ -465,6 +490,11 @@ body {
         margin-bottom: 10px;
         margin-top: 10px;
     }
+    
+    .ordem-imagem-cadastro {
+        order: 2;
+        margin-top: 40px;
+    }
 
     .titulo-principal {
         font-size: 1.9em;
@@ -480,16 +510,11 @@ body {
         margin-top: 15px;
         margin-bottom: 25px;
     }
-    
-    .texto-descricao {
-        font-size: 0.7em;
-    }
 
     .div-cadastro {
         padding: 35px 10px;
         order: 1;
         border-radius: 20px;
-        margin-top: 30px;
     }
 
     .borda-div-cadastro {
@@ -524,11 +549,6 @@ body {
         font-size: 0.9em;
     }
 
-    .div-imagem-cadastro {
-        order: 2;
-        background-color: unset;
-    }
-
     .texto-msg-cadastro {
         font-size: 1em;
     }
@@ -559,19 +579,10 @@ body {
         font-size: 0.8em;
     }
 
-    .icone-alterar-senha {
-        height: 40px;
-        width: 40px;
-        margin-top: -10px;
-        margin-bottom: -10px;
-        padding-top: 5px;
-        font-size: 1em;
-    }
-
     .icone-footer {
         height: 25px;
         width: 25px;
-        padding-top: 4px;
+        padding-top: 2px;
         font-size: 0.75em;
         margin-right: 5px;
     }
@@ -579,11 +590,20 @@ body {
     .linha-senha-responsivo {
         border-bottom: 1px solid #26403d;
         width: 95%;
-        margin: 15px auto 45px auto;
+        margin: 0px auto 45px auto;
     }
 
     .p-alterar-senha {
         padding-top: unset;
+    }
+
+    .input-alterar-senha {
+        font-size: 0.8em;
+    }
+
+    .olho-login-senha {
+        right: 20px;
+        top: 13px;
     }
 
 }
@@ -607,6 +627,11 @@ body {
         margin-left: unset;
         height: 300px;
     }
+    
+    .ordem-imagem-cadastro {
+        order: 2;
+        margin-top: 50px;
+    }
 
     .titulo-principal {
         font-size: 2em;
@@ -622,16 +647,11 @@ body {
         margin-top: 15px;
         margin-bottom: 25px;
     }
-    
-    .texto-descricao {
-        font-size: 0.7em;
-    }
 
     .div-cadastro {
         padding: 25px 5px 25px 5px;
         order: 1;
         border-radius: 20px;
-        margin-top: 20px;
     }
 
     .borda-div-cadastro {
@@ -666,11 +686,6 @@ body {
         font-size: 0.9em;
     }
 
-    .div-imagem-cadastro {
-        order: 2;
-        background-color: unset;
-    }
-
     .texto-msg-cadastro {
         font-size: 1.19em;
     }
@@ -701,23 +716,18 @@ body {
         font-size: 0.9em;
     }
 
-    .icone-alterar-senha {
-        height: 40px;
-        width: 40px;
-        margin-top: -10px;
-        margin-bottom: -10px;
-        padding-top: 5px;
-        font-size: 1em;
-    }
-
     .linha-senha-responsivo {
         border-bottom: 1px solid #26403d;
         width: 95%;
-        margin: 25px auto 55px auto;
+        margin: 0px auto 55px auto;
     }
 
     .p-alterar-senha {
         padding-top: unset;
+    }
+
+    .olho-login-senha {
+        right: 25px;
     }
 
 }
@@ -751,16 +761,11 @@ body {
         margin-top: 15px;
         margin-bottom: 25px;
     }
-    
-    .texto-descricao {
-        font-size: 0.7em;
-    }
 
     .div-cadastro {
         padding: 30px 0px 30px 0px;
         border-radius: 20px;
         order: 1;
-        margin-top: 20px;
     }
 
     .borda-div-cadastro {
@@ -796,9 +801,9 @@ body {
         font-size: 0.9em;
     }
 
-    .div-imagem-cadastro {
+    .ordem-imagem-cadastro {
         order: 2;
-        background-color: unset;
+        margin-top: 40px;
     }
 
     .texto-msg-cadastro {
@@ -817,7 +822,7 @@ body {
     .linha-senha-responsivo {
         border-bottom: 1px solid #26403d;
         width: 95%;
-        margin: 25px auto 55px auto;
+        margin: 0px auto 55px auto;
     }
 
     .p-alterar-senha {
@@ -850,6 +855,11 @@ body {
         margin-left: -34px;
         height: 275px;
     }
+    
+    .ordem-imagem-cadastro {
+        order: 2;
+        margin-top: 20px;
+    }
 
     .img-cadastro-senha {
         margin-left: -20px !important;
@@ -861,7 +871,7 @@ body {
     
     .subtitulo {
         font-size: 1.2em;
-        margin-top: 60px;
+        margin-top: 30px;
     }
     
     .div-linha {
@@ -904,13 +914,13 @@ body {
         border-radius: 50px;
     }
 
-    .div-imagem-cadastro {
-        border-radius: 50px;
-    }
-
     .imagem-msg-cadastro {
         height: 370px;
         margin-top: 20px;
+    }
+
+    .icone-alterar-senha {
+        margin-top: 10px;
     }
 
     .p-msg-cadastro {
@@ -922,6 +932,10 @@ body {
         margin-right: 20px;
         margin-top: 50px;
         margin-bottom: 20px;
+    }
+
+    .olho-login-senha {
+        right: 35px;
     }
 
 }
@@ -948,7 +962,10 @@ body {
     .imagem-cadastro {
         border-radius: 50px;
         margin-left: -10px;
-        height: 360px;
+    }
+
+    .texto-descricao {
+        font-size: 0.75em;
     }
 
     .inputs {
@@ -973,10 +990,6 @@ body {
         padding: 50px;
     }
 
-    .div-imagem-cadastro {
-        border-radius: 50px;
-    }
-
     .texto-msg-cadastro {
         font-size: 1.9em;
     }
@@ -987,6 +1000,13 @@ body {
 
     .div-cadastro {
         padding: 30px 10px 30px 10px;
+    }
+
+    .icone-alterar-senha {
+        height: 45px;
+        width: 45px;
+        margin: 0px auto;
+        font-size: 1.3em;
     }
 }
 
@@ -1005,9 +1025,9 @@ body {
         margin-left: -10px;
         height: 385px;
     }
-    
-    .div-imagem-cadastro {
-        border-radius: 50px;
+
+    .texto-descricao {
+        font-size: 0.75em;
     }
 
     .div-cadastro {
@@ -1027,5 +1047,16 @@ body {
 
     .imagem-msg-cadastro {
         height: 430px;
+    }
+
+    .icone-alterar-senha {
+        height: 45px;
+        width: 45px;
+        margin: 0px auto;
+        font-size: 1.3em;
+    }
+
+    .olho-login-senha {
+        right: 60px;
     }
 }
